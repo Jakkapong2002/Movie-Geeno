@@ -1,0 +1,138 @@
+body {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for readability */
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  }
+  
+  .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .card-container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    border-bottom: 1px solid #333;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #6200ea;
+    border-color: #6200ea;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3700b3;
+    border-color: #3700b3;
+  }
+  
+  .modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  .pagination {
+    margin: 20px 0;
+  }
+  
+  .pagination .page-item {
+    margin: 0 2px;
+  }
+  
+  .pagination .page-link {
+    color: #e0e0e0; /* Light color for text */
+    background-color: #333; /* Dark background color */
+    border: 1px solid #444; /* Slightly lighter border for separation */
+  }
+  
+  .pagination .page-link:hover {
+    color: #ffffff; /* Change text color on hover */
+    background-color: #555; /* Change background color on hover */
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #6200ea; /* Color for the active page */
+    border-color: #6200ea; /* Same color for the border */
+    color: #ffffff; /* White text color for active page */
+  }
+  
+  .pagination .page-item.disabled .page-link {
+    color: #666; /* Grey color for disabled links */
+    background-color: #222; /* Dark grey background for disabled links */
+    border: 1px solid #333; /* Dark border for disabled links */
+  }
+  
+  .pagination .page-item.disabled .page-link:hover {
+    background-color: #222; /* Dark grey background remains same when hovered */
+    cursor: not-allowed; /* Change cursor to indicate disabled */
+  }
+  
+  .iframe-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Mobile-first styles */
+  @media (max-width: 767px) {
+    .card-container {
+      /* Ensure cards are responsive and arranged in 3 columns */
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      flex: 1 1 calc(33.333% - 20px); /* Take up approximately 33.333% of the container width minus margin */
+      margin: 10px;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+  
+    .form-inline input {
+      margin-bottom: 0.5rem;
+      flex: 1;
+    }
+  
+    .pagination .page-item {
+      flex: 1;
+      text-align: center;
+    }
+  
+    .pagination .page-link {
+      padding: 0.75rem 1.25rem;
+    }
+  }
+  
